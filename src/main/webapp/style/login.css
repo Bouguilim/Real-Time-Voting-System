@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 5% 0 0;
+    padding: 0;
+    background-color: #333; /* Dark gray background */
+    color: #fff; /* White text color */
+}
+
+h1 {
+    color: #3498db; /* Blue */
+}
+
+h3 {
+    color: #3498db; /* Blue */
+}
+
+.login-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #444; /* Darker gray for the form */
+    border: 1px solid #555; /* Darker border color */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-field {
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #666; /* Darker border color */
+    border-radius: 3px;
+    background-color: #555; /* Slightly lighter gray */
+    color: #fff; /* White text color */
+}
+
+.btn {
+    background-color: #3498db; /* Blue */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #2184b3; /* Darker blue on hover */
+}
+
+.register-link {
+    color: #3498db; /* Blue */
+    text-decoration: none;
+}
+
+.register-link:hover {
+    color: #2184b3; /* Darker blue on hover */
+}

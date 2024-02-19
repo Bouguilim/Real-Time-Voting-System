@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head>
+    <title>View Results</title>
+    <link rel="stylesheet" type="text/css" href="style/viewResults.css" />
+</h:head>
+<h:body>
+    <h:form>
+        <h:outputLabel value="Select Vote to View Results" />
+        <h:selectOneMenu value="#{adminBean.selectedVoteTitle}">
+            <f:selectItems value="#{adminBean.availableVotes}" />
+        </h:selectOneMenu>
+        <br />
+		
+		<!-- Add Action Below -->
+        <h:commandButton action="#{adminBean.getSelectedVoteTitle}" value="View Results" />
+        <h:commandButton action="admin" value="Home" />
+    </h:form>
+</h:body>
+</html>

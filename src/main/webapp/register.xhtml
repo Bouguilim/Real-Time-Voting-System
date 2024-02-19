@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+    <title>Register Form</title>
+    <link rel="stylesheet" type="text/css" href="style/login.css" />
+</h:head>
+<h:body>
+    <h:form>
+        <p>Register Form</p>
+        
+        <h:outputLabel value="Username" />
+        <h:inputText id="username" value="#{register.username}" required="true" />
+        <br />
+        
+        <h:outputLabel value="Email" />
+        <h:inputText id="email" value="#{register.email}" required="true" />
+        <br />
+        
+        <h:outputLabel value="Password" />
+        <h:inputSecret id="password" value="#{register.password}" required="true" />
+        <br />
+        
+        <h:outputLabel value="Confirm Password" />
+        <h:inputSecret id="confirmPassword" value="#{register.confirmPassword}" required="true" />
+        <br />
+        
+        <h:commandButton action="#{register.registerUser}" value="Register" />
+    </h:form>
+</h:body>
+</html>

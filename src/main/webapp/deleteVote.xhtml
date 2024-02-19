@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head>
+    <title>Delete Vote</title>
+    <link rel="stylesheet" type="text/css" href="style/deleteVote.css" />
+</h:head>
+<h:body>
+    <h:form>
+        <h:outputLabel value="Select Vote to Delete" />
+        <h:selectOneMenu value="#{adminBean.selectedVoteTitle}">
+            <f:selectItems value="#{adminBean.availableVotes}" />
+        </h:selectOneMenu>
+        <br />
+
+        <h:commandButton action="#{adminBean.deleteVote}" value="Delete Vote" />
+        <h:commandButton action="admin" value="Home" />
+    </h:form>
+</h:body>
+</html>

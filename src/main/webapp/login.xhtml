@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="style/login.css" />
+</h:head>
+<h:body>
+    <h:form class="login-form">
+        <h1>Welcome to myVOTE</h1>
+        <h3>Where your opinions matter and your votes shape the future!</h3>
+        <h:outputText value="Username : " />
+        <h:inputText id="username" value="#{login.user}" class="input-field"></h:inputText>
+        <h:message for="username"></h:message>
+        <br /><br />
+
+        <h:outputText value="Password : " />
+        <h:inputSecret id="password" value="#{login.pwd}" class="input-field"></h:inputSecret>
+        <h:message for="password"></h:message>
+        <br /><br />
+
+        <h:commandButton action="#{authenticationClient.authentificateAndConnect}" value="Login" class="btn"></h:commandButton>
+        <br /><br />
+
+        <h:outputText value="Not registered yet? " />
+        <h:commandLink action="#{authenticationClient.goRegister}" value="Register now" class="register-link"></h:commandLink>
+    </h:form>
+</h:body>
+</html>

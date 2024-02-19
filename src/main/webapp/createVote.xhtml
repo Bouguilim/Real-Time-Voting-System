@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:a="http://xmlns.jcp.org/jsf/passthrough">
+<h:head>
+    <title>Create Vote</title>
+    <link rel="stylesheet" type="text/css" href="style/createVote.css" />
+</h:head>
+<h:body>
+    <h:form>
+        <h:outputLabel value="Vote Title" />
+        <h:inputText value="#{adminBean.voteTitle}"  />
+        <br />
+
+        <h:outputLabel value="Vote Question" />
+        <h:inputText value="#{adminBean.voteQuestion}"  />
+        <br />
+
+        <h:outputLabel value="Possible Answers (2-10)" />
+        <h:inputText value="#{adminBean.answers}"  a:placeholder="Option1, Option2, ..." />
+        <br />
+
+        <h:commandButton action="#{adminBean.createVote}" value="Create Vote" />
+        <h:commandButton action="admin" value="Home" />
+    </h:form>
+</h:body>
+</html>
